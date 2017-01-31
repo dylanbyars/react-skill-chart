@@ -1,0 +1,135 @@
+/* variables */
+
+:root {
+  --width-full: 80vw;
+  --height-bar: calc(70vh / 18);
+  /* color palette */
+  --color-background: #A8AEC1;
+  --color-key-background: #04151F;
+  --color-read: #7E7F9A;
+  --color-fiddled: #EB9486;
+  --color-learning: #FFCF56;
+  --color-cozy: #B8E1FF;
+  --color-virtuoso: #BAFF29;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  font-family: 'Cairo', sans-serif;
+  position: relative;
+}
+
+.widget {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 6vh;
+  padding: 10vh 0 8vh;
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: var(--height-bar);
+}
+
+.technology {
+  width: 15vw;
+  min-width: 70px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 80%;
+  width: var(--width-full);
+}
+
+.bar {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.read {
+  background-color: var(--color-read);
+  color: var(--color-read);
+}
+
+.fiddled {
+  background-color: var(--color-fiddled);
+  color: var(--color-fiddled);
+}
+
+.learning {
+  background-color: var(--color-learning);
+  color: var(--color-learning);
+}
+
+.cozy {
+  background-color: var(--color-cozy);
+  color: var(--color-cozy);
+}
+
+.virtuoso {
+  background-color: var(--color-virtuoso);
+  color: var(--color-virtuoso);
+}
+
+/* styles for the key */ 
+
+.key {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15vh;
+  padding: 3vw;
+  background-color: var(--color-key-background);
+  border-radius: 3px;
+}
+
+.key__virtuoso {
+  color: var(--color-virtuoso);
+}
+
+.key__cozy {
+  color: var(--color-cozy);
+}
+
+.key__learning {
+  color: var(--color-learning);
+}
+
+.key__fiddled {
+  color: var(--color-fiddled);
+}
+
+.key__read {
+  color: var(--color-read);
+}
